@@ -1,0 +1,15 @@
+[submodule "free-proxy-hunter-api-server"]
+	path = free-proxy-hunter-api-server
+	url = git@github.com:free-proxy-hunter/free-proxy-hunter-api-server.git
+[submodule "free-proxy-scanner"]
+	path = free-proxy-scanner
+	url = git@github.com:free-proxy-hunter/free-proxy-scanner.git
+[submodule "goat-server"]
+	path = goat-server
+	url = git@github.com:free-proxy-hunter/goat-server.git
+[submodule "free-proxy-hunter-webpage"]
+	path = free-proxy-hunter-webpage
+	url = git@github.com:free-proxy-hunter/free-proxy-hunter-webpage.git
+[submodule "dynamic-proxy-server"]
+	path = dynamic-proxy-server
+	url = git@github.com:free-proxy-hunter/dynamic-proxy-server.git
