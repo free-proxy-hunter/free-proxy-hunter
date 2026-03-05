@@ -13,3 +13,6 @@
 [submodule "dynamic-proxy-server"]
 	path = dynamic-proxy-server
 	url = git@github.com:free-proxy-hunter/dynamic-proxy-server.git
+[submodule "private-deploy"]
+	path = private-deploy
+	url = git@github.com:free-proxy-hunter/private-deploy.git
