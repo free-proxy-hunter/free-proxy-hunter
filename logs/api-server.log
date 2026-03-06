@@ -2842,3 +2842,825 @@ Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-
 2026/03/06 04:03:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
 [0m[33m[2.201ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 03:03:59.811'
 2026-03-06T04:03:59.813+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 04:08:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/system_config_repository.go:22 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[13.944ms] [34;1m[rows:0][0m SELECT * FROM `system_config` WHERE config_key = 'task.auto_generation_enabled' ORDER BY `system_config`.`id` LIMIT 1
+
+2026/03/06 04:08:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[13.906ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 03:08:59.808'
+2026-03-06T04:08:59.822+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 04:08:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/system_config_repository.go:22 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[4.207ms] [34;1m[rows:0][0m SELECT * FROM `system_config` WHERE config_key = 'task.auto_generation_threshold' ORDER BY `system_config`.`id` LIMIT 1
+
+2026/03/06 04:08:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scan_task_repository.go:197 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.687ms] [34;1m[rows:0][0m SELECT count(*) FROM `scan_task` WHERE status IN ('pending','assigned') AND enabled = true
+2026-03-06T04:08:59.828+0800	error	scheduler/task_generator.go:81	获取待处理任务数量失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 04:13:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.776ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 03:13:59.802'
+2026-03-06T04:13:59.804+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 04:18:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.376ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 03:18:59.79'
+2026-03-06T04:18:59.791+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 04:23:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[4.478ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 03:23:59.785'
+2026-03-06T04:23:59.790+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 04:28:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[2.508ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 03:28:59.78'
+2026-03-06T04:28:59.783+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 04:33:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[2.621ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 03:33:59.831'
+2026-03-06T04:33:59.834+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2026-03-06T04:38:59.829+0800	info	server/main.go:199	开始执行代理IP重测任务...
+
+2026/03/06 04:38:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/system_config_repository.go:22 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[3.415ms] [34;1m[rows:0][0m SELECT * FROM `system_config` WHERE config_key = 'task.auto_generation_enabled' ORDER BY `system_config`.`id` LIMIT 1
+
+2026/03/06 04:38:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/proxy_repository.go:317 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[3.844ms] [34;1m[rows:0][0m SELECT * FROM `proxies` WHERE last_check_time IS NULL OR last_check_time < DATE_SUB(NOW(), INTERVAL 24 HOUR) LIMIT 10
+2026-03-06T04:38:59.833+0800	error	server/main.go:205	创建代理IP重测任务失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 04:38:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[4.420ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 03:38:59.829'
+2026-03-06T04:38:59.834+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 04:38:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/system_config_repository.go:22 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.211ms] [34;1m[rows:0][0m SELECT * FROM `system_config` WHERE config_key = 'task.auto_generation_threshold' ORDER BY `system_config`.`id` LIMIT 1
+
+2026/03/06 04:38:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scan_task_repository.go:197 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[2.027ms] [34;1m[rows:0][0m SELECT count(*) FROM `scan_task` WHERE status IN ('pending','assigned') AND enabled = true
+2026-03-06T04:38:59.836+0800	error	scheduler/task_generator.go:81	获取待处理任务数量失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 04:43:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[2.315ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 03:43:59.828'
+2026-03-06T04:43:59.830+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 04:48:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.164ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 03:48:59.855'
+2026-03-06T04:48:59.856+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 04:53:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.211ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 03:53:59.854'
+2026-03-06T04:53:59.855+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 04:58:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.452ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 03:58:59.855'
+2026-03-06T04:58:59.857+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 05:03:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.833ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 04:03:59.854'
+2026-03-06T05:03:59.856+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 05:08:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.416ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 04:08:59.854'
+
+2026/03/06 05:08:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/system_config_repository.go:22 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.398ms] [34;1m[rows:0][0m SELECT * FROM `system_config` WHERE config_key = 'task.auto_generation_enabled' ORDER BY `system_config`.`id` LIMIT 1
+2026-03-06T05:08:59.856+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 05:08:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/system_config_repository.go:22 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[0.727ms] [34;1m[rows:0][0m SELECT * FROM `system_config` WHERE config_key = 'task.auto_generation_threshold' ORDER BY `system_config`.`id` LIMIT 1
+
+2026/03/06 05:08:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scan_task_repository.go:197 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[0.690ms] [34;1m[rows:0][0m SELECT count(*) FROM `scan_task` WHERE status IN ('pending','assigned') AND enabled = true
+2026-03-06T05:08:59.857+0800	error	scheduler/task_generator.go:81	获取待处理任务数量失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 05:13:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.410ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 04:13:59.854'
+2026-03-06T05:13:59.855+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 05:18:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.693ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 04:18:59.882'
+2026-03-06T05:18:59.883+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 05:23:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.648ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 04:23:59.886'
+2026-03-06T05:23:59.888+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 05:28:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.558ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 04:28:59.889'
+2026-03-06T05:28:59.891+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 05:33:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.652ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 04:33:59.883'
+2026-03-06T05:33:59.885+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 05:38:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/system_config_repository.go:22 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[2.007ms] [34;1m[rows:0][0m SELECT * FROM `system_config` WHERE config_key = 'task.auto_generation_enabled' ORDER BY `system_config`.`id` LIMIT 1
+
+2026/03/06 05:38:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[2.048ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 04:38:59.884'
+
+2026/03/06 05:38:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/system_config_repository.go:22 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[0.880ms] [34;1m[rows:0][0m SELECT * FROM `system_config` WHERE config_key = 'task.auto_generation_threshold' ORDER BY `system_config`.`id` LIMIT 1
+2026-03-06T05:38:59.886+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 05:38:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scan_task_repository.go:197 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[0.891ms] [34;1m[rows:0][0m SELECT count(*) FROM `scan_task` WHERE status IN ('pending','assigned') AND enabled = true
+2026-03-06T05:38:59.888+0800	error	scheduler/task_generator.go:81	获取待处理任务数量失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 05:43:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.638ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 04:43:59.885'
+2026-03-06T05:43:59.887+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 05:48:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.910ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 04:48:59.886'
+2026-03-06T05:48:59.888+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 05:53:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.579ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 04:53:59.888'
+2026-03-06T05:53:59.889+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 05:58:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[17.407ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 04:58:59.889'
+2026-03-06T05:58:59.906+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 06:03:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.820ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 05:03:59.89'
+2026-03-06T06:03:59.892+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 06:08:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.260ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 05:08:59.918'
+
+2026/03/06 06:08:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/system_config_repository.go:22 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.170ms] [34;1m[rows:0][0m SELECT * FROM `system_config` WHERE config_key = 'task.auto_generation_enabled' ORDER BY `system_config`.`id` LIMIT 1
+2026-03-06T06:08:59.920+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 06:08:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/system_config_repository.go:22 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[0.976ms] [34;1m[rows:0][0m SELECT * FROM `system_config` WHERE config_key = 'task.auto_generation_threshold' ORDER BY `system_config`.`id` LIMIT 1
+
+2026/03/06 06:08:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scan_task_repository.go:197 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[0.992ms] [34;1m[rows:0][0m SELECT count(*) FROM `scan_task` WHERE status IN ('pending','assigned') AND enabled = true
+2026-03-06T06:08:59.922+0800	error	scheduler/task_generator.go:81	获取待处理任务数量失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 06:13:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.566ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 05:13:59.922'
+2026-03-06T06:13:59.923+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 06:18:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.283ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 05:18:59.925'
+2026-03-06T06:18:59.926+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 06:23:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.553ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 05:23:59.938'
+2026-03-06T06:23:59.940+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 06:28:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[12.639ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 05:28:59.943'
+2026-03-06T06:28:59.956+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 06:33:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.106ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 05:33:59.946'
+2026-03-06T06:33:59.947+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 06:38:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/system_config_repository.go:22 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.331ms] [34;1m[rows:0][0m SELECT * FROM `system_config` WHERE config_key = 'task.auto_generation_enabled' ORDER BY `system_config`.`id` LIMIT 1
+
+2026/03/06 06:38:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.427ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 05:38:59.953'
+
+2026/03/06 06:38:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/system_config_repository.go:22 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[0.786ms] [34;1m[rows:0][0m SELECT * FROM `system_config` WHERE config_key = 'task.auto_generation_threshold' ORDER BY `system_config`.`id` LIMIT 1
+2026-03-06T06:38:59.955+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 06:38:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scan_task_repository.go:197 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[0.630ms] [34;1m[rows:0][0m SELECT count(*) FROM `scan_task` WHERE status IN ('pending','assigned') AND enabled = true
+2026-03-06T06:38:59.956+0800	error	scheduler/task_generator.go:81	获取待处理任务数量失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 06:43:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.444ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 05:43:59.958'
+2026-03-06T06:43:59.960+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 06:48:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.739ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 05:48:59.962'
+2026-03-06T06:48:59.964+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 06:53:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.172ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 05:53:59.965'
+2026-03-06T06:53:59.966+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 06:58:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[3.241ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 05:58:59.969'
+2026-03-06T06:58:59.973+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 07:03:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[4.179ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 06:03:59.973'
+2026-03-06T07:03:59.977+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 07:08:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/system_config_repository.go:22 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.229ms] [34;1m[rows:0][0m SELECT * FROM `system_config` WHERE config_key = 'task.auto_generation_enabled' ORDER BY `system_config`.`id` LIMIT 1
+
+2026/03/06 07:08:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.534ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 06:08:59.976'
+2026-03-06T07:08:59.978+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 07:08:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/system_config_repository.go:22 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[0.740ms] [34;1m[rows:0][0m SELECT * FROM `system_config` WHERE config_key = 'task.auto_generation_threshold' ORDER BY `system_config`.`id` LIMIT 1
+
+2026/03/06 07:08:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scan_task_repository.go:197 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[0.639ms] [34;1m[rows:0][0m SELECT count(*) FROM `scan_task` WHERE status IN ('pending','assigned') AND enabled = true
+2026-03-06T07:08:59.979+0800	error	scheduler/task_generator.go:81	获取待处理任务数量失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 07:13:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.412ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 06:13:59.979'
+2026-03-06T07:13:59.981+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 07:18:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.703ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 06:18:59.982'
+2026-03-06T07:18:59.984+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 07:23:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.287ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 06:23:59.978'
+2026-03-06T07:23:59.980+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 07:28:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.103ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 06:28:59.983'
+2026-03-06T07:28:59.985+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 07:33:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.054ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 06:33:59.987'
+2026-03-06T07:33:59.988+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 07:38:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/system_config_repository.go:22 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.807ms] [34;1m[rows:0][0m SELECT * FROM `system_config` WHERE config_key = 'task.auto_generation_enabled' ORDER BY `system_config`.`id` LIMIT 1
+
+2026/03/06 07:38:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.874ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 06:38:59.982'
+
+2026/03/06 07:38:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/system_config_repository.go:22 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[0.706ms] [34;1m[rows:0][0m SELECT * FROM `system_config` WHERE config_key = 'task.auto_generation_threshold' ORDER BY `system_config`.`id` LIMIT 1
+2026-03-06T07:38:59.984+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 07:38:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scan_task_repository.go:197 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.004ms] [34;1m[rows:0][0m SELECT count(*) FROM `scan_task` WHERE status IN ('pending','assigned') AND enabled = true
+2026-03-06T07:38:59.986+0800	error	scheduler/task_generator.go:81	获取待处理任务数量失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 07:43:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.166ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 06:43:59.985'
+2026-03-06T07:43:59.986+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 07:48:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.892ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 06:48:59.988'
+2026-03-06T07:48:59.990+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 07:53:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.465ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 06:53:59.985'
+2026-03-06T07:53:59.987+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 07:58:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.432ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 06:58:59.988'
+2026-03-06T07:58:59.990+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 08:03:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.591ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 07:03:59.991'
+2026-03-06T08:03:59.993+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 08:08:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[2.219ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 07:08:59.962'
+
+2026/03/06 08:08:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/system_config_repository.go:22 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[2.304ms] [34;1m[rows:0][0m SELECT * FROM `system_config` WHERE config_key = 'task.auto_generation_enabled' ORDER BY `system_config`.`id` LIMIT 1
+2026-03-06T08:08:59.964+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 08:08:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/system_config_repository.go:22 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[0.863ms] [34;1m[rows:0][0m SELECT * FROM `system_config` WHERE config_key = 'task.auto_generation_threshold' ORDER BY `system_config`.`id` LIMIT 1
+
+2026/03/06 08:08:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scan_task_repository.go:197 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[0.680ms] [34;1m[rows:0][0m SELECT count(*) FROM `scan_task` WHERE status IN ('pending','assigned') AND enabled = true
+2026-03-06T08:08:59.966+0800	error	scheduler/task_generator.go:81	获取待处理任务数量失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 08:13:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.147ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 07:13:59.962'
+2026-03-06T08:13:59.964+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 08:18:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[14.167ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 07:18:59.964'
+2026-03-06T08:18:59.979+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 08:23:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.321ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 07:23:59.935'
+2026-03-06T08:23:59.937+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 08:28:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[2.896ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 07:28:59.935'
+2026-03-06T08:28:59.938+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 08:33:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.719ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 07:33:59.935'
+2026-03-06T08:33:59.937+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 08:38:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.496ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 07:38:59.946'
+
+2026/03/06 08:38:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/system_config_repository.go:22 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.527ms] [34;1m[rows:0][0m SELECT * FROM `system_config` WHERE config_key = 'task.auto_generation_enabled' ORDER BY `system_config`.`id` LIMIT 1
+
+2026/03/06 08:38:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/system_config_repository.go:22 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[0.747ms] [34;1m[rows:0][0m SELECT * FROM `system_config` WHERE config_key = 'task.auto_generation_threshold' ORDER BY `system_config`.`id` LIMIT 1
+2026-03-06T08:38:59.947+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 08:38:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scan_task_repository.go:197 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[0.694ms] [34;1m[rows:0][0m SELECT count(*) FROM `scan_task` WHERE status IN ('pending','assigned') AND enabled = true
+2026-03-06T08:38:59.949+0800	error	scheduler/task_generator.go:81	获取待处理任务数量失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 08:43:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.593ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 07:43:59.946'
+2026-03-06T08:43:59.947+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 08:48:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.531ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 07:48:59.946'
+2026-03-06T08:48:59.947+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 08:53:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.808ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 07:53:59.953'
+2026-03-06T08:53:59.955+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 08:58:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.376ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 07:58:59.953'
+2026-03-06T08:58:59.954+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 09:03:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.550ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 08:03:59.954'
+2026-03-06T09:03:59.955+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 09:08:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.685ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 08:08:59.936'
+
+2026/03/06 09:08:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/system_config_repository.go:22 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.651ms] [34;1m[rows:0][0m SELECT * FROM `system_config` WHERE config_key = 'task.auto_generation_enabled' ORDER BY `system_config`.`id` LIMIT 1
+2026-03-06T09:08:59.938+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 09:08:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/system_config_repository.go:22 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[0.950ms] [34;1m[rows:0][0m SELECT * FROM `system_config` WHERE config_key = 'task.auto_generation_threshold' ORDER BY `system_config`.`id` LIMIT 1
+
+2026/03/06 09:08:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scan_task_repository.go:197 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[0.990ms] [34;1m[rows:0][0m SELECT count(*) FROM `scan_task` WHERE status IN ('pending','assigned') AND enabled = true
+2026-03-06T09:08:59.940+0800	error	scheduler/task_generator.go:81	获取待处理任务数量失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 09:13:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.585ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 08:13:59.933'
+2026-03-06T09:13:59.935+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 09:18:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.425ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 08:18:59.934'
+2026-03-06T09:18:59.935+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 09:21:31 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/proxy_repository.go:79 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[19.699ms] [34;1m[rows:0][0m SELECT count(*) FROM `proxies`
+2026-03-06T09:21:31.182+0800	info	middleware/logger.go:22	HTTP Request	{"method": "GET", "path": "/api/v1/proxies", "query": "page=1&size=20", "status": 200, "ip": "::1", "cost": 0.022265625, "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"}
+
+2026/03/06 09:21:31 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/proxy_repository.go:79 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[2.446ms] [34;1m[rows:0][0m SELECT count(*) FROM `proxies`
+2026-03-06T09:21:31.197+0800	info	middleware/logger.go:22	HTTP Request	{"method": "GET", "path": "/api/v1/proxies", "query": "page=1&size=20", "status": 200, "ip": "::1", "cost": 0.002792375, "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"}
+
+2026/03/06 09:31:15 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/proxy_repository.go:79 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[7.086ms] [34;1m[rows:0][0m SELECT count(*) FROM `proxies`
+2026-03-06T09:31:15.636+0800	info	middleware/logger.go:22	HTTP Request	{"method": "GET", "path": "/api/v1/proxies", "query": "page=1&size=20", "status": 200, "ip": "::1", "cost": 0.007212084, "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"}
+
+2026/03/06 09:31:15 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/proxy_repository.go:79 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[47.262ms] [34;1m[rows:0][0m SELECT count(*) FROM `proxies`
+2026-03-06T09:31:15.691+0800	info	middleware/logger.go:22	HTTP Request	{"method": "GET", "path": "/api/v1/proxies", "query": "page=1&size=20", "status": 200, "ip": "::1", "cost": 0.047380958, "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"}
+
+2026/03/06 09:39:41 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/proxy_repository.go:79 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.155ms] [34;1m[rows:0][0m SELECT count(*) FROM `proxies`
+2026-03-06T09:39:41.440+0800	info	middleware/logger.go:22	HTTP Request	{"method": "GET", "path": "/api/v1/proxies", "query": "page=1&size=20", "status": 200, "ip": "::1", "cost": 0.001391667, "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"}
+
+2026/03/06 09:39:41 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/proxy_repository.go:79 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[2.563ms] [34;1m[rows:0][0m SELECT count(*) FROM `proxies`
+2026-03-06T09:39:41.447+0800	info	middleware/logger.go:22	HTTP Request	{"method": "GET", "path": "/api/v1/proxies", "query": "page=1&size=20", "status": 200, "ip": "::1", "cost": 0.002760708, "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"}
+
+2026/03/06 09:40:11 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.687ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 08:40:11.27'
+2026-03-06T09:40:11.272+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 09:41:45 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/proxy_repository.go:79 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[2.442ms] [34;1m[rows:0][0m SELECT count(*) FROM `proxies`
+2026-03-06T09:41:45.396+0800	info	middleware/logger.go:22	HTTP Request	{"method": "GET", "path": "/api/v1/proxies", "query": "page=1&size=20", "status": 200, "ip": "::1", "cost": 0.0025835, "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"}
+
+2026/03/06 09:41:45 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/proxy_repository.go:79 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[0.968ms] [34;1m[rows:0][0m SELECT count(*) FROM `proxies`
+2026-03-06T09:41:45.400+0800	info	middleware/logger.go:22	HTTP Request	{"method": "GET", "path": "/api/v1/proxies", "query": "page=1&size=20", "status": 200, "ip": "::1", "cost": 0.001054, "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"}
+
+2026/03/06 09:51:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/proxy_repository.go:79 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[2.191ms] [34;1m[rows:0][0m SELECT count(*) FROM `proxies`
+2026-03-06T09:51:59.167+0800	info	middleware/logger.go:22	HTTP Request	{"method": "GET", "path": "/api/v1/proxies", "query": "page=1&size=20", "status": 200, "ip": "::1", "cost": 0.00228925, "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"}
+
+2026/03/06 09:51:59 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/proxy_repository.go:79 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.196ms] [34;1m[rows:0][0m SELECT count(*) FROM `proxies`
+2026-03-06T09:51:59.172+0800	info	middleware/logger.go:22	HTTP Request	{"method": "GET", "path": "/api/v1/proxies", "query": "page=1&size=20", "status": 200, "ip": "::1", "cost": 0.001309125, "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"}
+
+2026/03/06 09:53:24 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/proxy_repository.go:79 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.813ms] [34;1m[rows:0][0m SELECT count(*) FROM `proxies`
+2026-03-06T09:53:24.180+0800	info	middleware/logger.go:22	HTTP Request	{"method": "GET", "path": "/api/v1/proxies", "query": "page=1&size=20", "status": 200, "ip": "::1", "cost": 0.003016041, "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"}
+
+2026/03/06 09:53:24 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/proxy_repository.go:79 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[0.899ms] [34;1m[rows:0][0m SELECT count(*) FROM `proxies`
+2026-03-06T09:53:24.183+0800	info	middleware/logger.go:22	HTTP Request	{"method": "GET", "path": "/api/v1/proxies", "query": "page=1&size=20", "status": 200, "ip": "::1", "cost": 0.000978291, "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"}
+
+2026/03/06 10:20:54 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.828ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 09:20:54.922'
+2026-03-06T10:20:54.924+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 10:27:38 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/proxy_repository.go:79 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[4.055ms] [34;1m[rows:0][0m SELECT count(*) FROM `proxies`
+2026-03-06T10:27:38.274+0800	info	middleware/logger.go:22	HTTP Request	{"method": "GET", "path": "/api/v1/proxies", "query": "page=1&size=20", "status": 200, "ip": "::1", "cost": 0.007505791, "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"}
+
+2026/03/06 10:27:38 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/proxy_repository.go:79 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[0.915ms] [34;1m[rows:0][0m SELECT count(*) FROM `proxies`
+2026-03-06T10:27:38.278+0800	info	middleware/logger.go:22	HTTP Request	{"method": "GET", "path": "/api/v1/proxies", "query": "page=1&size=20", "status": 200, "ip": "::1", "cost": 0.00104225, "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"}
+
+2026/03/06 10:34:43 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/proxy_repository.go:79 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[2.544ms] [34;1m[rows:0][0m SELECT count(*) FROM `proxies`
+2026-03-06T10:34:43.133+0800	info	middleware/logger.go:22	HTTP Request	{"method": "GET", "path": "/api/v1/proxies", "query": "page=1&size=20", "status": 200, "ip": "::1", "cost": 0.002666666, "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"}
+
+2026/03/06 10:34:43 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/proxy_repository.go:79 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[0.701ms] [34;1m[rows:0][0m SELECT count(*) FROM `proxies`
+2026-03-06T10:34:43.137+0800	info	middleware/logger.go:22	HTTP Request	{"method": "GET", "path": "/api/v1/proxies", "query": "page=1&size=20", "status": 200, "ip": "::1", "cost": 0.000786875, "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"}
+
+2026/03/06 10:39:46 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/proxy_repository.go:79 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.257ms] [34;1m[rows:0][0m SELECT count(*) FROM `proxies`
+2026-03-06T10:39:46.159+0800	info	middleware/logger.go:22	HTTP Request	{"method": "GET", "path": "/api/v1/proxies", "query": "page=1&size=20", "status": 200, "ip": "::1", "cost": 0.001478458, "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"}
+
+2026/03/06 10:39:46 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/proxy_repository.go:79 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.027ms] [34;1m[rows:0][0m SELECT count(*) FROM `proxies`
+2026-03-06T10:39:46.162+0800	info	middleware/logger.go:22	HTTP Request	{"method": "GET", "path": "/api/v1/proxies", "query": "page=1&size=20", "status": 200, "ip": "::1", "cost": 0.001103666, "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"}
+
+2026/03/06 10:41:32 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.492ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 09:41:32.894'
+2026-03-06T10:41:32.896+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 10:41:40 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/proxy_repository.go:79 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[20.374ms] [34;1m[rows:0][0m SELECT count(*) FROM `proxies`
+2026-03-06T10:41:40.025+0800	info	middleware/logger.go:22	HTTP Request	{"method": "GET", "path": "/api/v1/proxies", "query": "page=1&size=20", "status": 200, "ip": "::1", "cost": 0.0205595, "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"}
+
+2026/03/06 10:41:40 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/proxy_repository.go:79 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[25.173ms] [34;1m[rows:0][0m SELECT count(*) FROM `proxies`
+2026-03-06T10:41:40.053+0800	info	middleware/logger.go:22	HTTP Request	{"method": "GET", "path": "/api/v1/proxies", "query": "page=1&size=20", "status": 200, "ip": "::1", "cost": 0.0254395, "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"}
+
+2026/03/06 10:41:52 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/proxy_repository.go:79 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[3.202ms] [34;1m[rows:0][0m SELECT count(*) FROM `proxies`
+2026-03-06T10:41:52.460+0800	info	middleware/logger.go:22	HTTP Request	{"method": "GET", "path": "/api/v1/proxies", "query": "page=1&size=20", "status": 200, "ip": "::1", "cost": 0.003291417, "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"}
+
+2026/03/06 10:41:52 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/proxy_repository.go:79 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.308ms] [34;1m[rows:0][0m SELECT count(*) FROM `proxies`
+2026-03-06T10:41:52.465+0800	info	middleware/logger.go:22	HTTP Request	{"method": "GET", "path": "/api/v1/proxies", "query": "page=1&size=20", "status": 200, "ip": "::1", "cost": 0.0013875, "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"}
+
+2026/03/06 10:42:57 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/proxy_repository.go:79 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[2.133ms] [34;1m[rows:0][0m SELECT count(*) FROM `proxies`
+2026-03-06T10:42:57.045+0800	info	middleware/logger.go:22	HTTP Request	{"method": "GET", "path": "/api/v1/proxies", "query": "page=1&size=20", "status": 200, "ip": "::1", "cost": 0.002279791, "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"}
+
+2026/03/06 10:42:57 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/proxy_repository.go:79 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[0.916ms] [34;1m[rows:0][0m SELECT count(*) FROM `proxies`
+2026-03-06T10:42:57.048+0800	info	middleware/logger.go:22	HTTP Request	{"method": "GET", "path": "/api/v1/proxies", "query": "page=1&size=20", "status": 200, "ip": "::1", "cost": 0.001006833, "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"}
+
+2026/03/06 10:43:51 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/proxy_repository.go:79 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[8.425ms] [34;1m[rows:0][0m SELECT count(*) FROM `proxies`
+2026-03-06T10:43:51.787+0800	info	middleware/logger.go:22	HTTP Request	{"method": "GET", "path": "/api/v1/proxies", "query": "page=1&size=20", "status": 200, "ip": "::1", "cost": 0.0086855, "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"}
+
+2026/03/06 10:43:51 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/proxy_repository.go:79 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[2.381ms] [34;1m[rows:0][0m SELECT count(*) FROM `proxies`
+2026-03-06T10:43:51.795+0800	info	middleware/logger.go:22	HTTP Request	{"method": "GET", "path": "/api/v1/proxies", "query": "page=1&size=20", "status": 200, "ip": "::1", "cost": 0.002729708, "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"}
+
+2026/03/06 10:44:01 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/proxy_repository.go:79 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.187ms] [34;1m[rows:0][0m SELECT count(*) FROM `proxies`
+2026-03-06T10:44:01.907+0800	info	middleware/logger.go:22	HTTP Request	{"method": "GET", "path": "/api/v1/proxies", "query": "page=1&size=20", "status": 200, "ip": "::1", "cost": 0.001303792, "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"}
+
+2026/03/06 10:44:01 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/proxy_repository.go:79 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[24.122ms] [34;1m[rows:0][0m SELECT count(*) FROM `proxies`
+2026-03-06T10:44:01.934+0800	info	middleware/logger.go:22	HTTP Request	{"method": "GET", "path": "/api/v1/proxies", "query": "page=1&size=20", "status": 200, "ip": "::1", "cost": 0.024236083, "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"}
+
+2026/03/06 14:29:58 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.511ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 13:29:58.499'
+
+2026/03/06 14:29:58 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/system_config_repository.go:22 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.591ms] [34;1m[rows:0][0m SELECT * FROM `system_config` WHERE config_key = 'task.auto_generation_enabled' ORDER BY `system_config`.`id` LIMIT 1
+2026-03-06T14:29:58.501+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 14:29:58 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/system_config_repository.go:22 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[0.675ms] [34;1m[rows:0][0m SELECT * FROM `system_config` WHERE config_key = 'task.auto_generation_threshold' ORDER BY `system_config`.`id` LIMIT 1
+
+2026/03/06 14:29:58 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scan_task_repository.go:197 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[0.570ms] [34;1m[rows:0][0m SELECT count(*) FROM `scan_task` WHERE status IN ('pending','assigned') AND enabled = true
+2026-03-06T14:29:58.503+0800	error	scheduler/task_generator.go:81	获取待处理任务数量失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 14:34:58 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.315ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 13:34:58.499'
+2026-03-06T14:34:58.501+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 14:39:58 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.289ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 13:39:58.498'
+2026-03-06T14:39:58.500+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 14:44:58 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.937ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 13:44:58.441'
+2026-03-06T14:44:58.443+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 14:49:58 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.804ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 13:49:58.437'
+2026-03-06T14:49:58.439+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 14:54:58 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[2.896ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 13:54:58.434'
+2026-03-06T14:54:58.437+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 14:59:58 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/system_config_repository.go:22 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.746ms] [34;1m[rows:0][0m SELECT * FROM `system_config` WHERE config_key = 'task.auto_generation_enabled' ORDER BY `system_config`.`id` LIMIT 1
+
+2026/03/06 14:59:58 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[2.431ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 13:59:58.43'
+2026-03-06T14:59:58.433+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 14:59:58 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/system_config_repository.go:22 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.292ms] [34;1m[rows:0][0m SELECT * FROM `system_config` WHERE config_key = 'task.auto_generation_threshold' ORDER BY `system_config`.`id` LIMIT 1
+
+2026/03/06 14:59:58 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scan_task_repository.go:197 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[0.783ms] [34;1m[rows:0][0m SELECT count(*) FROM `scan_task` WHERE status IN ('pending','assigned') AND enabled = true
+2026-03-06T14:59:58.434+0800	error	scheduler/task_generator.go:81	获取待处理任务数量失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 15:04:58 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[2.113ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 14:04:58.427'
+2026-03-06T15:04:58.429+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 15:05:24 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/proxy_repository.go:79 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.059ms] [34;1m[rows:0][0m SELECT count(*) FROM `proxies`
+2026-03-06T15:05:24.765+0800	info	middleware/logger.go:22	HTTP Request	{"method": "GET", "path": "/api/v1/proxies", "query": "page=1&size=20", "status": 200, "ip": "::1", "cost": 0.001277667, "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"}
+
+2026/03/06 15:05:24 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/proxy_repository.go:79 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[0.771ms] [34;1m[rows:0][0m SELECT count(*) FROM `proxies`
+2026-03-06T15:05:24.768+0800	info	middleware/logger.go:22	HTTP Request	{"method": "GET", "path": "/api/v1/proxies", "query": "page=1&size=20", "status": 200, "ip": "::1", "cost": 0.000858833, "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"}
+
+2026/03/06 15:07:20 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/proxy_repository.go:79 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.105ms] [34;1m[rows:0][0m SELECT count(*) FROM `proxies`
+2026-03-06T15:07:20.755+0800	info	middleware/logger.go:22	HTTP Request	{"method": "GET", "path": "/api/v1/proxies", "query": "page=1&size=20", "status": 200, "ip": "::1", "cost": 0.001196416, "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"}
+
+2026/03/06 15:07:20 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/proxy_repository.go:79 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.167ms] [34;1m[rows:0][0m SELECT count(*) FROM `proxies`
+2026-03-06T15:07:20.760+0800	info	middleware/logger.go:22	HTTP Request	{"method": "GET", "path": "/api/v1/proxies", "query": "page=1&size=20", "status": 200, "ip": "::1", "cost": 0.001247458, "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"}
+
+2026/03/06 15:09:58 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.941ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 14:09:58.423'
+2026-03-06T15:09:58.426+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 15:14:58 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.570ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 14:14:58.491'
+2026-03-06T15:14:58.493+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 15:19:58 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[2.556ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 14:19:58.49'
+2026-03-06T15:19:58.493+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 15:24:58 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[2.139ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 14:24:58.491'
+2026-03-06T15:24:58.493+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2026-03-06T15:29:58.472+0800	info	server/main.go:199	开始执行代理IP重测任务...
+
+2026/03/06 15:29:58 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/system_config_repository.go:22 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.505ms] [34;1m[rows:0][0m SELECT * FROM `system_config` WHERE config_key = 'task.auto_generation_enabled' ORDER BY `system_config`.`id` LIMIT 1
+
+2026/03/06 15:29:58 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.480ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 14:29:58.472'
+2026-03-06T15:29:58.474+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 15:29:58 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/system_config_repository.go:22 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[0.673ms] [34;1m[rows:0][0m SELECT * FROM `system_config` WHERE config_key = 'task.auto_generation_threshold' ORDER BY `system_config`.`id` LIMIT 1
+
+2026/03/06 15:29:58 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/proxy_repository.go:317 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[0.930ms] [34;1m[rows:0][0m SELECT * FROM `proxies` WHERE last_check_time IS NULL OR last_check_time < DATE_SUB(NOW(), INTERVAL 24 HOUR) LIMIT 10
+2026-03-06T15:29:58.475+0800	error	server/main.go:205	创建代理IP重测任务失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 15:29:58 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scan_task_repository.go:197 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[0.665ms] [34;1m[rows:0][0m SELECT count(*) FROM `scan_task` WHERE status IN ('pending','assigned') AND enabled = true
+2026-03-06T15:29:58.475+0800	error	scheduler/task_generator.go:81	获取待处理任务数量失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 15:34:58 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.621ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 14:34:58.444'
+2026-03-06T15:34:58.445+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 15:39:58 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.402ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 14:39:58.441'
+2026-03-06T15:39:58.442+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 15:44:58 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[2.146ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 14:44:58.439'
+2026-03-06T15:44:58.442+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 15:49:58 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.559ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 14:49:58.479'
+2026-03-06T15:49:58.481+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 15:54:58 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.746ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 14:54:58.479'
+2026-03-06T15:54:58.481+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 15:59:58 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[3.462ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 14:59:58.479'
+
+2026/03/06 15:59:58 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/system_config_repository.go:22 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[3.613ms] [34;1m[rows:0][0m SELECT * FROM `system_config` WHERE config_key = 'task.auto_generation_enabled' ORDER BY `system_config`.`id` LIMIT 1
+2026-03-06T15:59:58.483+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 15:59:58 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/system_config_repository.go:22 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.012ms] [34;1m[rows:0][0m SELECT * FROM `system_config` WHERE config_key = 'task.auto_generation_threshold' ORDER BY `system_config`.`id` LIMIT 1
+
+2026/03/06 15:59:58 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scan_task_repository.go:197 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[4.281ms] [34;1m[rows:0][0m SELECT count(*) FROM `scan_task` WHERE status IN ('pending','assigned') AND enabled = true
+2026-03-06T15:59:58.489+0800	error	scheduler/task_generator.go:81	获取待处理任务数量失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 16:04:58 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.616ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 15:04:58.474'
+2026-03-06T16:04:58.476+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 16:09:58 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.574ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 15:09:58.474'
+2026-03-06T16:09:58.476+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 16:14:58 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.065ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 15:14:58.474'
+2026-03-06T16:14:58.475+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 16:15:30 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/proxy_repository.go:79 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.640ms] [34;1m[rows:0][0m SELECT count(*) FROM `proxies`
+2026-03-06T16:15:30.446+0800	info	middleware/logger.go:22	HTTP Request	{"method": "GET", "path": "/api/v1/proxies", "query": "page=1&size=20", "status": 200, "ip": "::1", "cost": 0.001754208, "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"}
+
+2026/03/06 16:15:30 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/proxy_repository.go:79 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.174ms] [34;1m[rows:0][0m SELECT count(*) FROM `proxies`
+2026-03-06T16:15:30.453+0800	info	middleware/logger.go:22	HTTP Request	{"method": "GET", "path": "/api/v1/proxies", "query": "page=1&size=20", "status": 200, "ip": "::1", "cost": 0.001311958, "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"}
+
+2026/03/06 16:19:58 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.497ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 15:19:58.497'
+2026-03-06T16:19:58.499+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 16:24:58 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[2.701ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 15:24:58.497'
+2026-03-06T16:24:58.500+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 16:29:58 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[3.140ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 15:29:58.498'
+2026-03-06T16:29:58.501+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 16:29:58 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/system_config_repository.go:22 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[3.772ms] [34;1m[rows:0][0m SELECT * FROM `system_config` WHERE config_key = 'task.auto_generation_enabled' ORDER BY `system_config`.`id` LIMIT 1
+
+2026/03/06 16:29:58 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/system_config_repository.go:22 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.074ms] [34;1m[rows:0][0m SELECT * FROM `system_config` WHERE config_key = 'task.auto_generation_threshold' ORDER BY `system_config`.`id` LIMIT 1
+
+2026/03/06 16:29:58 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scan_task_repository.go:197 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[0.832ms] [34;1m[rows:0][0m SELECT count(*) FROM `scan_task` WHERE status IN ('pending','assigned') AND enabled = true
+2026-03-06T16:29:58.504+0800	error	scheduler/task_generator.go:81	获取待处理任务数量失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 16:31:11 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/proxy_repository.go:79 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[2.746ms] [34;1m[rows:0][0m SELECT count(*) FROM `proxies`
+2026-03-06T16:31:11.969+0800	info	middleware/logger.go:22	HTTP Request	{"method": "GET", "path": "/api/v1/proxies", "query": "page=1&size=20", "status": 200, "ip": "::1", "cost": 0.002888667, "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"}
+
+2026/03/06 16:31:11 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/proxy_repository.go:79 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[4.175ms] [34;1m[rows:0][0m SELECT count(*) FROM `proxies`
+2026-03-06T16:31:11.977+0800	info	middleware/logger.go:22	HTTP Request	{"method": "GET", "path": "/api/v1/proxies", "query": "page=1&size=20", "status": 200, "ip": "::1", "cost": 0.004282833, "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"}
+
+2026/03/06 17:32:40 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[6.898ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 16:32:40.611'
+2026-03-06T17:32:40.619+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 17:37:40 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[3.202ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 16:37:40.603'
+2026-03-06T17:37:40.607+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 17:42:40 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.444ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 16:42:40.603'
+2026-03-06T17:42:40.605+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 17:47:40 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[3.124ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 16:47:40.603'
+2026-03-06T17:47:40.606+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 17:52:40 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.669ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 16:52:40.603'
+2026-03-06T17:52:40.605+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 17:57:40 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.500ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 16:57:40.603'
+2026-03-06T17:57:40.604+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 17:57:40 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/system_config_repository.go:22 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.522ms] [34;1m[rows:0][0m SELECT * FROM `system_config` WHERE config_key = 'task.auto_generation_enabled' ORDER BY `system_config`.`id` LIMIT 1
+
+2026/03/06 17:57:40 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/system_config_repository.go:22 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[0.799ms] [34;1m[rows:0][0m SELECT * FROM `system_config` WHERE config_key = 'task.auto_generation_threshold' ORDER BY `system_config`.`id` LIMIT 1
+
+2026/03/06 17:57:40 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scan_task_repository.go:197 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[0.973ms] [34;1m[rows:0][0m SELECT count(*) FROM `scan_task` WHERE status IN ('pending','assigned') AND enabled = true
+2026-03-06T17:57:40.606+0800	error	scheduler/task_generator.go:81	获取待处理任务数量失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 18:02:40 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.651ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 17:02:40.603'
+2026-03-06T18:02:40.604+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 18:07:40 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.581ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 17:07:40.624'
+2026-03-06T18:07:40.625+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 18:12:40 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.556ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 17:12:40.625'
+2026-03-06T18:12:40.626+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 18:17:40 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.674ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 17:17:40.625'
+2026-03-06T18:17:40.627+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 18:22:40 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.506ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 17:22:40.583'
+2026-03-06T18:22:40.584+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 18:27:40 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/system_config_repository.go:22 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.633ms] [34;1m[rows:0][0m SELECT * FROM `system_config` WHERE config_key = 'task.auto_generation_enabled' ORDER BY `system_config`.`id` LIMIT 1
+
+2026/03/06 18:27:40 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.635ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 17:27:40.581'
+2026-03-06T18:27:40.583+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 18:27:40 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/system_config_repository.go:22 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[0.956ms] [34;1m[rows:0][0m SELECT * FROM `system_config` WHERE config_key = 'task.auto_generation_threshold' ORDER BY `system_config`.`id` LIMIT 1
+
+2026/03/06 18:27:40 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scan_task_repository.go:197 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.116ms] [34;1m[rows:0][0m SELECT count(*) FROM `scan_task` WHERE status IN ('pending','assigned') AND enabled = true
+2026-03-06T18:27:40.585+0800	error	scheduler/task_generator.go:81	获取待处理任务数量失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 18:32:40 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[2.188ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 17:32:40.58'
+2026-03-06T18:32:40.583+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 18:37:40 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.542ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 17:37:40.603'
+2026-03-06T18:37:40.607+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 18:42:40 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.511ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 17:42:40.604'
+2026-03-06T18:42:40.606+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 18:47:40 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.376ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 17:47:40.603'
+2026-03-06T18:47:40.604+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 18:52:40 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[3.269ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 17:52:40.62'
+2026-03-06T18:52:40.624+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 18:57:40 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/system_config_repository.go:22 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[2.539ms] [34;1m[rows:0][0m SELECT * FROM `system_config` WHERE config_key = 'task.auto_generation_enabled' ORDER BY `system_config`.`id` LIMIT 1
+
+2026/03/06 18:57:40 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[3.294ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 17:57:40.621'
+2026-03-06T18:57:40.624+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 18:57:40 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/system_config_repository.go:22 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.209ms] [34;1m[rows:0][0m SELECT * FROM `system_config` WHERE config_key = 'task.auto_generation_threshold' ORDER BY `system_config`.`id` LIMIT 1
+
+2026/03/06 18:57:40 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scan_task_repository.go:197 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.011ms] [34;1m[rows:0][0m SELECT count(*) FROM `scan_task` WHERE status IN ('pending','assigned') AND enabled = true
+2026-03-06T18:57:40.627+0800	error	scheduler/task_generator.go:81	获取待处理任务数量失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 19:02:40 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.445ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 18:02:40.621'
+2026-03-06T19:02:40.623+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 19:07:40 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[2.281ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 18:07:40.623'
+2026-03-06T19:07:40.626+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 19:12:40 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.564ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 18:12:40.623'
+2026-03-06T19:12:40.626+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 19:17:40 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[1.214ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 18:17:40.625'
+2026-03-06T19:17:40.627+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 19:22:40 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[23.926ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 18:22:40.635'
+2026-03-06T19:22:40.660+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 19:27:40 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/system_config_repository.go:22 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[2.063ms] [34;1m[rows:0][0m SELECT * FROM `system_config` WHERE config_key = 'task.auto_generation_enabled' ORDER BY `system_config`.`id` LIMIT 1
+
+2026/03/06 19:27:40 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[2.221ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 18:27:40.638'
+2026-03-06T19:27:40.642+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 19:27:40 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/system_config_repository.go:22 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[0.883ms] [34;1m[rows:0][0m SELECT * FROM `system_config` WHERE config_key = 'task.auto_generation_threshold' ORDER BY `system_config`.`id` LIMIT 1
+
+2026/03/06 19:27:40 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scan_task_repository.go:197 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[0.696ms] [34;1m[rows:0][0m SELECT count(*) FROM `scan_task` WHERE status IN ('pending','assigned') AND enabled = true
+2026-03-06T19:27:40.643+0800	error	scheduler/task_generator.go:81	获取待处理任务数量失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 19:32:40 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[2.014ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 18:32:40.64'
+2026-03-06T19:32:40.642+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+2026/03/06 19:37:40 [31;1m/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server/internal/repository/scanner_repository.go:99 [35;1mError 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+[0m[33m[3.474ms] [34;1m[rows:0][0m SELECT * FROM `scanner` WHERE status = 'online' AND last_heartbeat < '2026-03-06 18:37:40.641'
+2026-03-06T19:37:40.645+0800	error	server/main.go:169	检查超时扫描器失败: Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)

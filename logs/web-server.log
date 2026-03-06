@@ -9,3 +9,6 @@
   ➜  Network: http://192.168.3.37:53362/
   ➜  Network: http://198.18.0.1:53362/
 [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+3:01:28 PM [vite] hmr update /src/components/layout/MainLayout.tsx
+3:05:24 PM [vite] hmr update /src/components/layout/MainLayout.tsx
+3:07:20 PM [vite] hmr update /src/components/layout/MainLayout.tsx
