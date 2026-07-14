@@ -3,7 +3,7 @@
 # Free Proxy Hunter 启动脚本
 # 使用 nohup 保持进程运行
 
-PROJECT_DIR="/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter"
+PROJECT_DIR="/home/cc11001100/github/free-proxy-hunter/free-proxy-hunter"
 API_DIR="$PROJECT_DIR/free-proxy-hunter-api-server"
 WEB_DIR="$PROJECT_DIR/free-proxy-hunter-webpage"
 SCANNER_DIR="$PROJECT_DIR/free-proxy-scanner"
@@ -43,7 +43,7 @@ start_web() {
 start_scanner() {
     echo -e "${GREEN}启动代理扫描器...${NC}"
     cd $SCANNER_DIR
-    nohup ./scanner > $LOG_DIR/scanner.log 2>&1 &
+    nohup ./free-proxy-scanner > $LOG_DIR/scanner.log 2>&1 &
     echo $! > $PID_DIR/scanner.pid
     echo -e "${GREEN}扫描器已启动，PID: $!${NC}"
 }
@@ -73,7 +73,7 @@ stop_all() {
     # 清理残留进程
     pkill -f "free-proxy-hunter-api-server" 2>/dev/null
     pkill -f "vite" 2>/dev/null
-    pkill -f "./scanner" 2>/dev/null
+    pkill -f "free-proxy-scanner" 2>/dev/null
 }
 
 # 查看状态
@@ -161,8 +161,8 @@ start_all() {
     start_web
     start_scanner
     echo -e "${GREEN}=== 所有服务已启动 ===${NC}"
-    echo -e "前端: http://localhost:53362"
-    echo -e "API:  http://localhost:53361"
+    echo -e "前端: http://192.168.1.82:53362"
+    echo -e "API:  http://192.168.1.82:53361"
     echo ""
     echo -e "${YELLOW}启动看门狗监控...${NC}"
     watchdog &
