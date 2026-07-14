@@ -4,7 +4,7 @@ module.exports = {
     {
       name: 'free-proxy-api',
       script: './free-proxy-hunter-api-server',
-      cwd: '/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server',
+      cwd: '/home/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-api-server',
       instances: 1,
       exec_mode: 'fork',
       autorestart: true,
@@ -19,7 +19,7 @@ module.exports = {
       log_date_format: 'YYYY-MM-DD HH:mm:ss Z',
       env: {
         GO_ENV: 'production',
-        PORT: '53361'
+        FPH_CONFIG_FILE: 'configs/config.yaml'
       },
       watch: false,
       kill_timeout: 5000,
@@ -31,7 +31,7 @@ module.exports = {
       name: 'free-proxy-web',
       script: 'npm',
       args: 'run dev',
-      cwd: '/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-webpage',
+      cwd: '/home/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-hunter-webpage',
       instances: 1,
       exec_mode: 'fork',
       autorestart: true,
@@ -54,8 +54,8 @@ module.exports = {
     // 代理扫描器
     {
       name: 'free-proxy-scanner',
-      script: './scanner',
-      cwd: '/Users/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-scanner',
+      script: './free-proxy-scanner',
+      cwd: '/home/cc11001100/github/free-proxy-hunter/free-proxy-hunter/free-proxy-scanner',
       instances: 1,
       exec_mode: 'fork',
       autorestart: true,
@@ -73,7 +73,8 @@ module.exports = {
       },
       watch: false,
       kill_timeout: 10000,
-      listen_timeout: 15000
+      listen_timeout: 15000,
+      stop_exit_codes: [0, 1]
     }
   ]
 };
