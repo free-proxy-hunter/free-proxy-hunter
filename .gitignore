@@ -1,1 +1,8 @@
 .idea
+# 扫描产出的有效代理列表，含真实代理地址，不入库
+valid-proxies.json
+# 局域网服务入口声明，含内网 IP，不入库
+server-url.txt
+# 运行时产物
+logs/
+pids/
