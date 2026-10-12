@@ -126,7 +126,7 @@ status() {
     fi
 
     echo -e "${YELLOW}=== 端口监听 ===${NC}"
-    netstat -an 2>/dev/null | grep -E "53361|53362|53364" || echo "未检测到端口监听"
+    netstat -an 2>/dev/null | grep -E "53361|53362|18000" || echo "未检测到端口监听"
 }
 
 # 查看日志
@@ -199,7 +199,7 @@ start_all() {
     echo -e "${GREEN}=== 所有服务已启动 ===${NC}"
     echo -e "前端: http://192.168.1.82:53362"
     echo -e "API:  http://192.168.1.82:53361"
-    echo -e "动态代理: http://192.168.1.82:53364"
+    echo -e "动态代理: http://192.168.1.82:18000"
     echo ""
     echo -e "${YELLOW}启动看门狗监控...${NC}"
     watchdog &
