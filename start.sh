@@ -23,8 +23,8 @@ NC='\033[0m' # No Color
 # 启动 API 服务器
 start_api() {
     echo -e "${GREEN}启动 API 服务器...${NC}"
-    cd $API_DIR
-    nohup ./free-proxy-hunter-api-server > $LOG_DIR/api-server.log 2>&1 &
+    # 用绝对路径 + nohup exec：让 $! 记录 binary 自身 PID，而非子 shell PID
+    nohup $API_DIR/free-proxy-hunter-api-server > $LOG_DIR/api-server.log 2>&1 &
     echo $! > $PID_DIR/api-server.pid
     echo -e "${GREEN}API 服务器已启动，PID: $!${NC}"
     sleep 2
@@ -43,17 +43,23 @@ start_web() {
 # 启动扫描器
 start_scanner() {
     echo -e "${GREEN}启动代理扫描器...${NC}"
-    cd $SCANNER_DIR
-    nohup ./free-proxy-scanner > $LOG_DIR/scanner.log 2>&1 &
+    nohup $SCANNER_DIR/free-proxy-scanner > $LOG_DIR/scanner.log 2>&1 &
     echo $! > $PID_DIR/scanner.pid
     echo -e "${GREEN}扫描器已启动，PID: $!${NC}"
+}
+
+# 启动代理池保活检测（常驻循环：拉取待复验代理 → 真实验证 → 上报）
+start_keepalive() {
+    echo -e "${GREEN}启动代理池保活检测...${NC}"
+    nohup $SCANNER_DIR/free-proxy-scanner keepalive --interval 60s --concurrent 20 --batch-size 100 > $LOG_DIR/keepalive.log 2>&1 &
+    echo $! > $PID_DIR/keepalive.pid
+    echo -e "${GREEN}保活检测已启动，PID: $!${NC}"
 }
 
 # 启动动态代理服务
 start_dynamic_proxy() {
     echo -e "${GREEN}启动动态代理服务...${NC}"
-    cd $DP_DIR
-    nohup ./dynamic-proxy-server > $LOG_DIR/dynamic-proxy-server.log 2>&1 &
+    nohup $DP_DIR/dynamic-proxy-server > $LOG_DIR/dynamic-proxy-server.log 2>&1 &
     echo $! > $PID_DIR/dynamic-proxy-server.pid
     echo -e "${GREEN}动态代理服务已启动，PID: $!${NC}"
 }
@@ -80,17 +86,27 @@ stop_all() {
         rm -f $PID_DIR/scanner.pid
     fi
 
+    # 停止保活检测
+    if [ -f $PID_DIR/keepalive.pid ]; then
+        kill $(cat $PID_DIR/keepalive.pid) 2>/dev/null && echo -e "${GREEN}保活检测已停止${NC}" || echo -e "${RED}保活检测未运行${NC}"
+        rm -f $PID_DIR/keepalive.pid
+    fi
+
     # 停止动态代理服务
     if [ -f $PID_DIR/dynamic-proxy-server.pid ]; then
         kill $(cat $PID_DIR/dynamic-proxy-server.pid) 2>/dev/null && echo -e "${GREEN}动态代理服务已停止${NC}" || echo -e "${RED}动态代理服务未运行${NC}"
         rm -f $PID_DIR/dynamic-proxy-server.pid
     fi
 
-    # 清理残留进程
-    pkill -f "free-proxy-hunter-api-server" 2>/dev/null
-    pkill -f "vite" 2>/dev/null
-    pkill -f "free-proxy-scanner" 2>/dev/null
-    pkill -f "dynamic-proxy-server" 2>/dev/null
+    # 清理残留进程（仅本项目，精确匹配路径，避免误杀同机其他项目进程）
+    pkill -f "$API_DIR/free-proxy-hunter-api-server" 2>/dev/null
+    pkill -f "$WEB_DIR" 2>/dev/null
+    pkill -f "$SCANNER_DIR/free-proxy-scanner" 2>/dev/null
+    pkill -f "$DP_DIR/dynamic-proxy-server" 2>/dev/null    # 停止看门狗
+    if [ -f $PID_DIR/watchdog.pid ]; then
+        kill $(cat $PID_DIR/watchdog.pid) 2>/dev/null
+        rm -f $PID_DIR/watchdog.pid
+    fi
 }
 
 # 查看状态
@@ -118,6 +134,13 @@ status() {
         echo -e "${RED}✗ 扫描器: 未运行${NC}"
     fi
 
+    # 检查保活检测
+    if [ -f $PID_DIR/keepalive.pid ] && kill -0 $(cat $PID_DIR/keepalive.pid) 2>/dev/null; then
+        echo -e "${GREEN}✓ 保活检测: 运行中 (PID: $(cat $PID_DIR/keepalive.pid))${NC}"
+    else
+        echo -e "${RED}✗ 保活检测: 未运行${NC}"
+    fi
+
     # 检查动态代理服务
     if [ -f $PID_DIR/dynamic-proxy-server.pid ] && kill -0 $(cat $PID_DIR/dynamic-proxy-server.pid) 2>/dev/null; then
         echo -e "${GREEN}✓ 动态代理服务: 运行中 (PID: $(cat $PID_DIR/dynamic-proxy-server.pid))${NC}"
@@ -141,11 +164,14 @@ logs() {
         scanner)
             tail -f $LOG_DIR/scanner.log
             ;;
+        keepalive)
+            tail -f $LOG_DIR/keepalive.log
+            ;;
         dynamic-proxy)
             tail -f $LOG_DIR/dynamic-proxy-server.log
             ;;
         *)
-            echo "Usage: $0 logs [api|web|scanner|dynamic-proxy]"
+            echo "Usage: $0 logs [api|web|scanner|keepalive|dynamic-proxy]"
             ;;
     esac
 }
@@ -177,6 +203,14 @@ watchdog() {
             fi
         fi
 
+        # 检查保活检测
+        if [ -f $PID_DIR/keepalive.pid ]; then
+            if ! kill -0 $(cat $PID_DIR/keepalive.pid) 2>/dev/null; then
+                echo -e "${YELLOW}[$(date)] 保活检测崩溃，正在重启...${NC}"
+                start_keepalive
+            fi
+        fi
+
         # 检查动态代理服务
         if [ -f $PID_DIR/dynamic-proxy-server.pid ]; then
             if ! kill -0 $(cat $PID_DIR/dynamic-proxy-server.pid) 2>/dev/null; then
@@ -195,6 +229,7 @@ start_all() {
     start_api
     start_web
     start_scanner
+    start_keepalive
     start_dynamic_proxy
     echo -e "${GREEN}=== 所有服务已启动 ===${NC}"
     echo -e "前端: http://192.168.1.82:53362"
@@ -202,7 +237,8 @@ start_all() {
     echo -e "动态代理: http://192.168.1.82:18000"
     echo ""
     echo -e "${YELLOW}启动看门狗监控...${NC}"
-    watchdog &
+    # 输出重定向到 null，避免后台 watchdog 持有 stdout 管道导致脚本挂起（如 restart | tail）
+    watchdog > /dev/null 2>&1 &
     echo $! > $PID_DIR/watchdog.pid
 }
 
